@@ -2,6 +2,9 @@
 
 > A Vue.js project
 
+
+hosting link https://my-diary-app-ae5fa.firebaseapp.com/
+
 ## Build Setup
 
 ``` bash
