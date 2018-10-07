@@ -1,0 +1,116 @@
+.contacts{
+    @include container-fluid;
+    padding: 60px 10px;
+    &__header {
+        padding-bottom: 50px;
+    }
+    &__title{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+.headquarter {
+    &__title{
+        font-size: 34px;
+        color: $green_color;
+        font-weight: 400;
+        & span{
+            color: $black_color;
+            font-weight: 200;
+        }
+    }
+    &__wrapper{
+        padding-top: 50px;
+    }
+    &__addres-list{
+        font-size: 15px;
+        color: $black_color;
+        font-weight: 600;
+        line-height: 28px;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    &__phone{
+        color: $green_color;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    &__block{
+        & dd {
+            margin: 0;
+        }
+    }
+    &__description {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    &__link {
+        color:$green_color;
+        font-family: $font_2;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+.technical-support{
+    &__header{
+        padding-top: 30px;
+    }
+    &__title{
+        font-size: 34px;
+        & span{
+            color: $green_color;
+        }
+    }
+    &__wrapper{
+        padding-top: 50px;
+    }
+    &__note{
+        font-size: 15px;
+        padding-bottom: 40px;
+    }
+    &__phone{
+        color: $green_color;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+}
+
+@media #{$tablet-widths} {
+    .contacts{
+        &__wrapper{
+            display: flex;
+        }
+        &__headquarters{
+            width: 50%;
+        }
+        &__technical-support{
+            width: 50%;
+        }
+    } 
+    .technical-support{
+        &__header{
+            padding-top: 0;
+        }
+    }
+}
+
+@media #{$desktop-widths} {
+    .headquarter{
+        &__wrapper{
+            display: flex;
+        }
+        &__block{
+            width: 50%;
+            & dl{
+                margin: 0 0 0 40px;
+                
+            }
+        }
+    }
+    .technical-support{
+        padding: 0 0 0 50px;
+    }
+
+}

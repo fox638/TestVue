@@ -1,0 +1,62 @@
+.offices{
+    background-color: $black_color_2;
+    &__contener{
+        
+    }
+    &__wrapper{
+        padding: 100px 0 0 40px;
+        height: 500px;
+    }
+    &__header{
+        padding-bottom: 50px;
+    }
+    &__title{
+        font-size: 35px;
+        color: $white;
+        line-height: 35px;
+    }
+    &__tabs-list{
+        display: flex;
+    }
+    &__tabs-item{
+        margin-right: 15px;
+        text-transform: uppercase;
+        font-size: 11px;
+        & a{
+            color: $white;
+        }
+        &.is-active a{
+            color: $green_color;
+        }
+        
+    }
+    &__tab{
+        padding-top:50px;
+        color:$white;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    &__tab-title{
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media #{$desktop-widths} {
+    .offices{
+        &__contener{
+            display: flex;
+            
+        }
+        
+        &__wrapper{
+            width: 50%;
+            padding-left: 60px;
+        }
+    }
+    .map__wrapper{
+        width: 50%;
+    }
+}
